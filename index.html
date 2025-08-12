@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MLB Stories</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1773cf;
+            --secondary-color: #f0f2f4;
+            --text-primary: #111418;
+            --text-secondary: #637588;
+            --background-color: #ffffff;
+            --accent-color: #e5e7eb;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Newsreader', serif;
+        }
+        .hero-gradient {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-color text-text-primary">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-secondary-color">
+<div class="container mx-auto flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-3 text-text-primary" href="#">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-2xl font-bold tracking-tight">MLB Stories</h1>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors" href="#">Seasons</a>
+<a class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors" href="#">Eras</a>
+<a class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors" href="#">Players</a>
+<a class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors" href="#">Stories</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center">
+<label class="relative">
+<svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-text-secondary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+<input class="form-input w-48 rounded-full border-secondary-color bg-secondary-color/50 py-2 pl-10 pr-4 text-sm focus:bg-white focus:ring-2 focus:ring-[var(--primary-color)] transition-all" placeholder="Search" value=""/>
+</label>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white bg-cover bg-top" style='background-image: url("https://images.unsplash.com/photo-1537138844604-ed3f6b5e9637?w=1920&q=80");'>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 max-w-3xl px-6">
+<h1 class="text-5xl md:text-7xl font-extrabold !leading-tight tracking-tighter">The Stories Behind Every MLB Season</h1>
+<p class="mt-4 text-lg md:text-xl text-white/90">A story-driven guide to Major League Baseball, built for fans who want to understand the big picture.</p>
+</div>
+</section>
+<section class="bg-secondary-color/50 py-12 md:py-16">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto">
+<label class="relative flex items-center">
+<svg class="absolute left-4 h-6 w-6 text-text-secondary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+<input class="form-input w-full rounded-full border-accent-color bg-white py-4 pl-12 pr-6 text-base focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow shadow-md" placeholder="Search by year, decade, player, or team..." value=""/>
+</label>
+<div class="flex justify-center gap-2 mt-4 text-sm text-text-secondary">
+<span>Quick select:</span>
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">1980s</a>
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">1990s</a>
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">2000s</a>
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">2010s</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold tracking-tight text-center">Featured Seasons</h2>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group block">
+<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEhDxOogPUCd1WKxZV3aQqbuSccmA-mquS6Jo8C4hE5nTOtcBYTb-xnvnZy08W9yzLFvNXvjYnZlZ0wnX_WB12gL4sl3-L3_Mcr348optbsxShz3ww-R50s-290oVCToATMJEqQ-Y8FHv-tSBjP6QxFoPCywAk3qu4U5BPcODgyxr2XWjwaiGCdC56sQhl3o39IMsBU9RwO_zJltZtvrL1aejjNOmdCZKnyXo3EkaFpHT9MtEUCT35jAZvs-MofLGQeQ0ki3JU4L-_");'></div>
+<div class="p-6 bg-white">
+<h3 class="text-xl font-bold">2023: The Rangers' Triumph</h3>
+<p class="text-text-secondary mt-2">A season of unexpected heroes and dramatic finishes.</p>
+</div>
+</div>
+</div>
+<div class="group block">
+<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAp86VisexGM-2RF4bcS2_OqEqk6cZtH14c4Wi_KMIcw1PcX_gJqfofwmpR-hasR982lR1cLwAwO4NRYeqA7RQlt3ZRL--2pslqVIj0rVhqc59QKbiXfz2DVqfBKFnqEIswiYDSafAdlY7CvwftIRIdiPYDlVKh0-Tx4vIJ14KoZQGjiGXcBXWGncSXtz1QNFcecVOmzVpWlPyMn7rMDCZiLG8aPDs61IJaB31_M4V5Aai4i1mZv_oTULiXcoJyA6fImEC4wvF3sj5H");'></div>
+<div class="p-6 bg-white">
+<h3 class="text-xl font-bold">2016: The Cubs Break the Curse</h3>
+<p class="text-text-secondary mt-2">A historic championship ending a century-long drought.</p>
+</div>
+</div>
+</div>
+<div class="group block">
+<div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANgznpSgqZD2QTKlKV16GePy-tyOQDqxrOZPhNeIrTbsjGuO4NclTXbxo6gFFTX4v00P3VLNaBEyFfoPQt-Arct32VTtMDN-n72ldYYLDHP1lJS9ywRYDSWElTJCe6vQTOiihoMc5eJtp8zHqwys5sWhxyNACkx-HRIKUI24b-LwVgG2mWBxQ8try2FxqspyATr7KUYfgUHWtAPDgGu104yoQWi8kxvOBjNF8RXxY9Tv5QSw-USmQ1BQc-U-3ZeE1Rin3CJbJ5L93Y");'></div>
+<div class="p-6 bg-white">
+<h3 class="text-xl font-bold">2001: The Diamondbacks' Miracle</h3>
+<p class="text-text-secondary mt-2">A season of resilience and unforgettable moments.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-secondary-color/50 py-16 md:py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold tracking-tight text-center">Explore by Era or Story Thread</h2>
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<a class="group" href="#">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-md group-hover:opacity-90 transition-opacity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAW5NXSFmroHg8IG4XXHHKrA-3NfAclcXhJK2mA4QvilllxJhekNLU1hNuLEuXw9iiRaFUnHGyhh7bbJJmtASN6VU7zJZdRi-37DMyZHinWUFEAYdcDjld95ta_JEpcbb7uMUjYCMj2-D3T0xYwPP2BDL2GwS7aGAC4lEdyhsMX_KvnypjxcjJ4hnirGUes6M1N5GnaffYfcESXkDIwATLI8pcsYpMdN7gNWFZW9yopR8P5_lHoZzm1U2HEr2-jIt0UQt7xEYuvnfq");'></div>
+<h3 class="mt-4 text-xl font-bold">Deadball Era</h3>
+<p class="text-text-secondary mt-1 text-sm">Low scores, strategic play, and baseball's rugged beginnings.</p>
+</a>
+<a class="group" href="#">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-md group-hover:opacity-90 transition-opacity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0QFtfF7K2dN1DxMCS0v7d6UNm8uRnvIIKG9TGkMg4gDy9Gv7bmOFN51ULbKfWNrKRQeOM1TuQ_YKBk6kW4-ofFpLnN--r-79eORSdZEreuZf7QOCG0S7uTicjutL2N8NGQ5TAUEe6mqKvnRQ0Bn30BUZHRReSkN5FqHp6dLlvSrGg0uRCbOUICdB9B_5KoDPB-TboF6j3Z7hquCL7uQsuNyzfIRs6NLOjZZCAvU-JAXQCE0U6KFRZTXTMh1WcUFhLRsSkfjYJnd7K");'></div>
+<h3 class="mt-4 text-xl font-bold">Expansion Era</h3>
+<p class="text-text-secondary mt-1 text-sm">Growth of the league with new teams and changing dynamics.</p>
+</a>
+<a class="group" href="#">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-md group-hover:opacity-90 transition-opacity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUdGsEjXXcGQd6DiUhgf_eoE34j61GQusoUV2Ft-eY3wNuQVcNzagc_L3LkiF7dts92m2OgRdj8UKQgMbbXOdSD75ePKmtIuavjJvvUDpxi92rc8Xp32ZVd1VdjBg_NRgIAoRIiyHDhocU5pjwPtjPyz3PhlAWXyDrD3JMw7ZDKkl2Yvn4LLCMTL9xNEe5DxNfyFZbK0T5HW2PcF1o3mzdfNgdrplTiAE3QZcyXzFDGZtBjKabxbPc3uoxK5FDWlQ5VIR_bia2FBoU");'></div>
+<h3 class="mt-4 text-xl font-bold">Steroid Era</h3>
+<p class="text-text-secondary mt-1 text-sm">Controversial period marked by performance-enhancing drugs.</p>
+</a>
+<a class="group" href="#">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-md group-hover:opacity-90 transition-opacity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjUhM9RsUYjWlN0hlT2lYG-4TArB-cR_xImg1s1_cwr8goDF6iSqZzCmb5LIzZd29WcnvVud1xdZi_42Io608CwvgB7uznXVCnPxAFceXpvaP0LXhtDzsO2zRt1q8PptcC9c8ZvKv7PYS95ctfeQ012MACsAIH9ZDOOuOC0ynMhu80r2JMLWo-RH-FFQoUhLukl1hClS-yGQKf8esTbSVNHZGgQmL5u42xqynWgxuBHnFj9VgBFvNS4Cra5CHwkfC0u-xiprBFU39H");'></div>
+<h3 class="mt-4 text-xl font-bold">Modern Analytics</h3>
+<p class="text-text-secondary mt-1 text-sm">Data-driven strategies transforming how the game is played.</p>
+</a>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold tracking-tight text-center">Current Connections</h2>
+<div class="mt-12 max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<h3 class="text-2xl font-bold">Shohei Ohtani's Historic Season Echoes Babe Ruth's Legacy</h3>
+<p class="text-text-secondary mt-4">Ohtani's dual-threat prowess draws parallels to Ruth's early career, bridging eras of baseball greatness and captivating a new generation of fans.</p>
+<a class="mt-6 font-bold text-[var(--primary-color)] hover:underline" href="#">Read the Story →</a>
+</div>
+<div class="md:w-1/2 h-64 md:h-auto bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7jTlVt5swclIXFf2Aj_lUY1YnEORUFyn9o7iW3Jt4Lft86cIsLDZ2etX94SiWe6wIYPTh8TAHYB7GHbKfGN_Q0xOXz6sRyxR3Hpc1X0RXVvCj4wBlj6Cd0MLJ6wXHoADOFdwi6vBMgrSu85I8q1aFUB3oGdDT6NqsF5KzTrbNyWp_Q9xVN9L_-1Nply3MRMOMQOu7tit7pxdRSLrrQMzNPvxk-jjdoU9tr1LUrgvXWCXJByz5nN4jLVSVpLo9COSeHSNlmbQYIH8s");'></div>
+</div>
+</div>
+</section>
+<section class="bg-secondary-color/50 py-16 md:py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold tracking-tight text-center">Popular Players</h2>
+<div class="mt-12 flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-6 px-6">
+<div class="flex gap-8 snap-center">
+<a class="flex-shrink-0 w-48 text-center group" href="#">
+<img alt="Mike Trout" class="w-40 h-40 rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIdBTs9sX3nO7hQxENMN9-AFr7vvIPCFKsvuQnYAXW8MXjs3Nd_ZItjFU3F0HJ_h0Bncuy2i4EF_K7nkAseEXSXUcQcQtuiSazbJN6l5VS7_tHSThJYDtgrQNiKQ_ygVHMIN40sKW7CqbD58qpMTafJzIRHbhgsnqgC1eI4lpiEAeEP5KVRDdUcJXWMph3ebetmqh5TwJKD72GVhuwLbThkhalXgegp6vFmaxc1PeA9RsgkWXN6FDUt2lrUKuHfEVsV0Cp84L3CQlI"/>
+<h3 class="mt-4 font-bold text-lg">Mike Trout</h3>
+<p class="text-text-secondary text-sm">Dominant Outfielder</p>
+</a>
+<a class="flex-shrink-0 w-48 text-center group" href="#">
+<img alt="Aaron Judge" class="w-40 h-40 rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUglRHl5YrZTo621oN5oWPpYtkMKc3t4hEZImRUzCaGObZRfAn-XjcDV0_oQijeRqFIchfqip0A1vHQ19XbK0qlGWAo_7uH5iqI_wr9cDUlRoKHZfamBY7tzB956qUZL3qUjX7NG_Ir-mbjuT0yTHZ7ijd3mpeH5oq2Y3vvUmHJpyGLYa4ZsRCe4zpCmNcDv1z6q24p5h92KzA3Zit1iV5g0J41OP-XmVDNetJJPmQY3x9NIV9_AOWMsDZbcXXcFn3RzD1UbnpNjy4"/>
+<h3 class="mt-4 font-bold text-lg">Aaron Judge</h3>
+<p class="text-text-secondary text-sm">Power Hitter</p>
+</a>
+<a class="flex-shrink-0 w-48 text-center group" href="#">
+<img alt="Mookie Betts" class="w-40 h-40 rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjTMpmQyOKe7ynNWUWIZhfEQKxOGiH4uX6wXgBxJvBWQIC2aN7KYTC9BZAdIw9azpFrNWcFw88afzjVCjV1FpZyc-Y-E1iQiSCUeEricRWnB2HTGvoLG4-tSjvpiyl-LNGoDR3inXjiljqZpeDcerDd0xXo2TothhEBLgmNR2UFUZ5oUT0n1EdS9W8rtwVO9crbvscdY2rOdBSseXtK7fn10NAW8v0Fi2cSkLLvmEO0asRzp0mqaHuChdX99eouflmkz7gqhRHRMx2"/>
+<h3 class="mt-4 font-bold text-lg">Mookie Betts</h3>
+<p class="text-text-secondary text-sm">Versatile Star</p>
+</a>
+<a class="flex-shrink-0 w-48 text-center group" href="#">
+<img alt="Clayton Kershaw" class="w-40 h-40 rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeblIIdbT5F8295lUpJTP5QRtFNP8fxQnTIeR5SYluea6y9TcBImj1VNDxzE0-bVO9ODD4NrtQciqwEeEY5-RcJ199PCGYyO04PXRgKjCz1k2vxKOXEyL1Xyo_I8SrIzN5jgnGGeFQwPTuj_3nLz6S7tQhpHofhRWw30aFTx6M_xrWO0ftMh5Pt3qiNg6LSnmOpAlicmRhgisLmSUw2KVTEhSNbuLNo-iu6Gcn3pL7PNYpmSye8ZZppfXrsZbfzNR3xpB9ieXZRUBd"/>
+<h3 class="mt-4 font-bold text-lg">Clayton Kershaw</h3>
+<p class="text-text-secondary text-sm">Ace Pitcher</p>
+</a>
+<a class="flex-shrink-0 w-48 text-center group" href="#">
+<img alt="Jacob deGrom" class="w-40 h-40 rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCJlEcJVbmd5wWEOIwzB6UOUf3eN63uiKXc5lWLRszxql-Lp9qyViLLddeDlnEsLFgplk96nRdaX2jA12613GorfEViat8FBK6ZcZkBZPb27cgm8thzEn-xY-CPRCwc-JbfurpPFZzH_1KUh3RbQ_HaG5MHJYs1O01O3Zj3_JqhUiukomHs3dCF4MbANRrFv6KRDvbkQajg8yx04K07QPMocwnLQyQrd0ueGaCXx-c0ONR_aEydaMtV063Pp5AzBpaBqwTMGMjkj1Y"/>
+<h3 class="mt-4 font-bold text-lg">Jacob deGrom</h3>
+<p class="text-text-secondary text-sm">Elite Pitcher</p>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[var(--primary-color)] text-white py-12">
+<div class="container mx-auto px-6 text-center max-w-3xl">
+<h2 class="text-2xl font-bold">How to Use This Site</h2>
+<p class="mt-4 text-white/90">Dive into the rich history of Major League Baseball through compelling narratives, focusing on the key storylines and defining moments of each season. This site prioritizes the human element of baseball, offering a unique perspective beyond traditional statistics. Explore by era, player, or specific season to uncover the drama and excitement that shaped the game.</p>
+</div>
+</section>
+</main>
+<footer class="bg-text-primary text-secondary-color py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<h3 class="text-lg font-semibold text-white">MLB Stories</h3>
+<p class="mt-2 text-sm">The stories behind every season.</p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h4 class="font-semibold text-white">Explore</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">Seasons</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Eras</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Players</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Story Threads</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white">Decades</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">2010s</a></li>
+<li><a class="hover:text-white transition-colors" href="#">2000s</a></li>
+<li><a class="hover:text-white transition-colors" href="#">1990s</a></li>
+<li><a class="hover:text-white transition-colors" href="#">1980s</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white">About</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Sitemap</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white">Connect</h4>
+<div class="flex mt-4 space-x-4">
+<a class="hover:text-white transition-colors" href="#"><svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg></a>
+<a class="hover:text-white transition-colors" href="#"><svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-text-secondary/20 pt-8 text-center text-sm text-text-secondary">
+<p>© 2024 MLB Stories. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
