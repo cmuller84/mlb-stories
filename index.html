@@ -49,14 +49,14 @@
 <div class="hidden md:flex items-center">
 <label class="relative">
 <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-text-secondary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
-<input class="form-input w-48 rounded-full border-secondary-color bg-secondary-color/50 py-2 pl-10 pr-4 text-sm focus:bg-white focus:ring-2 focus:ring-[var(--primary-color)] transition-all" placeholder="Search" value=""/>
+<input id="header-search" class="form-input w-48 rounded-full border-secondary-color bg-secondary-color/50 py-2 pl-10 pr-4 text-sm focus:bg-white focus:ring-2 focus:ring-[var(--primary-color)] transition-all" placeholder="Search" value="" onkeypress="if(event.key==='Enter'){performSearch(this.value)}"/>
 </label>
 </div>
 </div>
 </div>
 </header>
 <main class="flex-grow">
-<section class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1508644476872-0bf2847b1ff6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");'>
+<section class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1556618047-68de75ac87b6?w=1920&q=80");'>
 <div class="absolute inset-0 hero-gradient"></div>
 <div class="relative z-10 max-w-3xl px-6">
 <h1 class="text-5xl md:text-7xl font-extrabold !leading-tight tracking-tighter">The Stories Behind Every MLB Season</h1>
@@ -64,7 +64,7 @@
 <div class="mt-8">
 <label class="relative flex items-center">
 <svg class="absolute left-4 h-6 w-6 text-text-secondary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
-<input class="form-input w-full rounded-full border-accent-color bg-white/95 py-4 pl-12 pr-6 text-base text-text-primary focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow shadow-md backdrop-blur-sm" placeholder="Search by year, decade, player, or team..." value=""/>
+<input id="hero-search" class="form-input w-full rounded-full border-accent-color bg-white/95 py-4 pl-12 pr-6 text-base text-text-primary focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow shadow-md backdrop-blur-sm" placeholder="Search by year, decade, player, or team..." value="" onkeypress="if(event.key==='Enter'){performSearch(this.value)}"/>
 </label>
 <div class="flex justify-center gap-2 mt-4 text-sm text-white/80">
 <span>Quick select:</span>
@@ -82,7 +82,7 @@
 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="group block">
 <div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEhDxOogPUCd1WKxZV3aQqbuSccmA-mquS6Jo8C4hE5nTOtcBYTb-xnvnZy08W9yzLFvNXvjYnZlZ0wnX_WB12gL4sl3-L3_Mcr348optbsxShz3ww-R50s-290oVCToATMJEqQ-Y8FHv-tSBjP6QxFoPCywAk3qu4U5BPcODgyxr2XWjwaiGCdC56sQhl3o39IMsBU9RwO_zJltZtvrL1aejjNOmdCZKnyXo3EkaFpHT9MtEUCT35jAZvs-MofLGQeQ0ki3JU4L-_");'></div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80");'></div>
 <div class="p-6 bg-white">
 <h3 class="text-xl font-bold">2023: The Rangers' Triumph</h3>
 <p class="text-text-secondary mt-2">A season of unexpected heroes and dramatic finishes.</p>
@@ -91,7 +91,7 @@
 </div>
 <div class="group block">
 <div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAp86VisexGM-2RF4bcS2_OqEqk6cZtH14c4Wi_KMIcw1PcX_gJqfofwmpR-hasR982lR1cLwAwO4NRYeqA7RQlt3ZRL--2pslqVIj0rVhqc59QKbiXfz2DVqfBKFnqEIswiYDSafAdlY7CvwftIRIdiPYDlVKh0-Tx4vIJ14KoZQGjiGXcBXWGncSXtz1QNFcecVOmzVpWlPyMn7rMDCZiLG8aPDs61IJaB31_M4V5Aai4i1mZv_oTULiXcoJyA6fImEC4wvF3sj5H");'></div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=80");'></div>
 <div class="p-6 bg-white">
 <h3 class="text-xl font-bold">2016: The Cubs Break the Curse</h3>
 <p class="text-text-secondary mt-2">A historic championship ending a century-long drought.</p>
@@ -100,7 +100,7 @@
 </div>
 <div class="group block">
 <div class="overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANgznpSgqZD2QTKlKV16GePy-tyOQDqxrOZPhNeIrTbsjGuO4NclTXbxo6gFFTX4v00P3VLNaBEyFfoPQt-Arct32VTtMDN-n72ldYYLDHP1lJS9ywRYDSWElTJCe6vQTOiihoMc5eJtp8zHqwys5sWhxyNACkx-HRIKUI24b-LwVgG2mWBxQ8try2FxqspyATr7KUYfgUHWtAPDgGu104yoQWi8kxvOBjNF8RXxY9Tv5QSw-USmQ1BQc-U-3ZeE1Rin3CJbJ5L93Y");'></div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&q=80");'></div>
 <div class="p-6 bg-white">
 <h3 class="text-xl font-bold">2001: The Diamondbacks' Miracle</h3>
 <p class="text-text-secondary mt-2">A season of resilience and unforgettable moments.</p>
@@ -242,4 +242,11 @@
 </footer>
 </div>
 
+<script>
+function performSearch(query) {
+  if (query.trim()) {
+    alert(`Searching for: "${query}". (Search functionality coming soon!)`);
+  }
+}
+</script>
 </body></html>
